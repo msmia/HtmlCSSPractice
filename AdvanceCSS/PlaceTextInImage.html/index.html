@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place text in Image</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+<style>
+
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+                        "sidebar content"
+                        "sidebar footer";
+  }
+
+  .content {
+    grid-area: content;
+    justify-self: center;
+    align-self: center;
+  }
+
+  aside {
+    grid-area: sidebar;
+    background-color: gray;
+  }
+
+  footer {
+    grid-area: footer;
+    align-content: center;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
+  @media screen and (max-width:39.9375em){
+    
+    body {
+    grid-template-columns: 20% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: 
+                        "footer footer"
+                        "sidebar content";                   
+  }
+
+  }
+
+</style>
+
+</head>
+<body>
+  <aside>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Register</a></li>
+    </ul>
+  </aside>
+  <div class="content">
+    <p>My content</p>
+  </div>
+  <footer>
+    <p>This is my footer bar</p>
+  </footer>
+</body>
+</html>

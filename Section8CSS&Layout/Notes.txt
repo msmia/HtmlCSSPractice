@@ -1,0 +1,32 @@
+1.When to use flex box?
+  - use flexbox for one demintional flow (columns)
+2.Wen to use CSS Grid?
+  - Use css grid for two dimentional flow (row and columns)
+3. How to prevent horizontal scrolling when reducing the screen size?
+  - Use CSS Grid fr
+
+
+Note: 
+* 
+* Put a 'height' to the div to make it bigger. ex: height: 100px; If you don't put any 'height' to it, it will only take one block on (one line) by default.
+* Put a color to the 'border' of the div to see how much space its taking. ex: Border: 2px solid chocolate;
+* Use 'flex-direction: column;' to make the elements inside the container vertical.
+* Use 'flex-direction: row;' to maek the elements inside the container horizontal.
+
+* display: Specifies the type of box used for an HTML element
+  - use 'display: flex;' to enable flexbox.
+* flex-direction: Specifies the direction of the flexible items inside a flex container
+  - flex-direction: row | column;
+* justify-content: Horizontally aligns the flex items when the items do not use all available space on the main-axis
+  - justify-content: stretch or
+    justify-content: flex-start or
+    justify-content: flex-end or
+    justify-content: center or
+    justify-content: space-around or
+    justify-content: space-between
+* align-items: Vertically aligns the flex items when the items do not use all available space on the cross-axis.
+* flex-wrap: Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+* align-content: Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+* flex-flow: A shorthand property for flex-direction and flex-wrap.
+* order: Specifies the order of a flexible item relative to the rest of the flex items inside the same container.
+* align-self: Used on flex items. Overrides the container's align-items property.
